@@ -14,6 +14,7 @@
 
 #import "ClarifaiClient.h"
 #import "ClarifaiClientFactory.h"
+#import "TagProcessor.h"
 
 typedef void (^ImageProcessorCallback)();
 

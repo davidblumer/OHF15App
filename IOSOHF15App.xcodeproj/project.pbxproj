@@ -16,6 +16,7 @@
 		B24D23791BB6D91D00B2833F /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23781BB6D91D00B2833F /* ClarifaiClient.m */; settings = {ASSET_TAGS = (); }; };
 		B24D237C1BB6D96E00B2833F /* ImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D237B1BB6D96E00B2833F /* ImageProcessor.m */; settings = {ASSET_TAGS = (); }; };
 		B24D23811BB6DF4100B2833F /* ClarifaiClientFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */; settings = {ASSET_TAGS = (); }; };
+		B24D23851BB6E44400B2833F /* TagProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23841BB6E44400B2833F /* TagProcessor.m */; settings = {ASSET_TAGS = (); }; };
 		B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDA1BB6AC3400E42203 /* main.m */; };
 		B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDD1BB6AC3400E42203 /* AppDelegate.m */; };
 		B2DFEFE71BB6AC3400E42203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFEFE51BB6AC3400E42203 /* Main.storyboard */; };
@@ -61,6 +62,8 @@
 		B24D237E1BB6D99400B2833F /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		B24D237F1BB6DF4100B2833F /* ClarifaiClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClarifaiClientFactory.h; sourceTree = "<group>"; };
 		B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClientFactory.m; sourceTree = "<group>"; };
+		B24D23831BB6E44400B2833F /* TagProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagProcessor.h; sourceTree = "<group>"; };
+		B24D23841BB6E44400B2833F /* TagProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagProcessor.m; sourceTree = "<group>"; };
 		B2DFEFD61BB6AC3400E42203 /* IOSOHF15App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSOHF15App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DFEFDA1BB6AC3400E42203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2DFEFDC1BB6AC3400E42203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 				B24D237D1BB6D97B00B2833F /* ImageProcessor */,
 				B24D23631BB6AFF000B2833F /* MapViewViewController */,
 				B24D236F1BB6BED700B2833F /* SideMenuTableViewController */,
+				B24D23861BB6E44700B2833F /* TagProcessor */,
 				B24D23731BB6C0F200B2833F /* MainViewController */,
 			);
 			name = Code;
@@ -214,6 +218,15 @@
 				B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */,
 			);
 			name = ClarifaiClientFactory;
+			sourceTree = "<group>";
+		};
+		B24D23861BB6E44700B2833F /* TagProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				B24D23831BB6E44400B2833F /* TagProcessor.h */,
+				B24D23841BB6E44400B2833F /* TagProcessor.m */,
+			);
+			name = TagProcessor;
 			sourceTree = "<group>";
 		};
 		B2DFEFCD1BB6AC3400E42203 = {
@@ -476,6 +489,7 @@
 				B24D23811BB6DF4100B2833F /* ClarifaiClientFactory.m in Sources */,
 				B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */,
 				B24D23721BB6C0EF00B2833F /* MainViewController.m in Sources */,
+				B24D23851BB6E44400B2833F /* TagProcessor.m in Sources */,
 				B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

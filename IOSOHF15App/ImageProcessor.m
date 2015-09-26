@@ -23,23 +23,21 @@
         if (error)
         {
             [SBAlertViewHelper showErrorAlertViewWithText:SBL(@"clarifaiError")];
+            
+            callback();
         }
         else
         {
             ClarifaiResult *result = results.firstObject;
             
-            NSArray *probabilities = result.tags;
+            NSArray *probabilities = result.probabilities;
             NSArray *tags          = result.tags;
             
             NSLog(@"Tags: %@",          tags);
             NSLog(@"Probabilities: %@", probabilities);
 
-            
-            //  self.textView.text = [NSString stringWithFormat:@"Tags:\n%@",
-            //     [result.tags componentsJoinedByString:@", "]];
+            [TagProcessor processTags:tags probabilities:probabilities callback:callback];
         }
-        
-        // callback();
     }];
 }
 /*

@@ -54,15 +54,18 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    [SVProgressHUD show];
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    [ImageProcessor processImage:image callback:^{
-        NSLog(@"AMK");
+    [ImageProcessor processImage:image callback:^
+    {
+        [imagePicker dismissViewControllerAnimated:YES completion:nil];
+        
+        [SVProgressHUD dismiss];
+        
+        [SBAlertViewHelper showAlertViewWithTitle:SBL(@"clarifaiSuccessTitle") text:SBL(@"clarifaiSuccessText")];
     }];
-    
-    
 }
 
 @end

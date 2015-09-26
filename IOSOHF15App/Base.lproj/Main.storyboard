@@ -139,17 +139,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fkc-ce-m11">
-                                <rect key="frame" x="0.0" y="30" width="600" height="570"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fkc-ce-m11">
+                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fkc-ce-m11" firstAttribute="leading" secondItem="Mpz-6O-hPD" secondAttribute="leadingMargin" constant="-20" id="8MW-JW-gVn"/>
+                            <constraint firstAttribute="trailing" secondItem="Fkc-ce-m11" secondAttribute="trailing" id="Dcq-9r-6oR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fkc-ce-m11" secondAttribute="trailing" constant="340" id="MM3-vn-8Yl"/>
+                            <constraint firstItem="Fkc-ce-m11" firstAttribute="leading" secondItem="Mpz-6O-hPD" secondAttribute="leading" id="Oi1-di-170"/>
+                            <constraint firstItem="Fkc-ce-m11" firstAttribute="top" secondItem="Mpz-6O-hPD" secondAttribute="topMargin" constant="63" id="T0Z-1d-uq7"/>
                             <constraint firstItem="Fkc-ce-m11" firstAttribute="width" secondItem="Mpz-6O-hPD" secondAttribute="width" id="U9r-LS-yfE"/>
                             <constraint firstItem="Fkc-ce-m11" firstAttribute="height" secondItem="Mpz-6O-hPD" secondAttribute="height" id="cc7-tY-vBy"/>
+                            <constraint firstItem="Fkc-ce-m11" firstAttribute="bottom" secondItem="eUp-qj-24f" secondAttribute="top" id="lKa-Cg-QrX"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8MW-JW-gVn"/>
+                                <exclude reference="MM3-vn-8Yl"/>
+                                <exclude reference="U9r-LS-yfE"/>
+                                <exclude reference="cc7-tY-vBy"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="iUL-1C-cXJ">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="GJk-hv-BCW"/>

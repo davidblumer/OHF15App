@@ -14,37 +14,34 @@
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (NSString *)segueIdentifierForIndexPathInRightMenu:(NSIndexPath *)indexPath
+- (void)viewDidLoad
 {
-    return @"foo";
+    [super viewDidLoad];
+
+    
 }
 
+#pragma mark -
+
+- (void)configureLeftMenuButton:(UIButton *)button
+{
+    UIImage *image = [UIImage imageNamed:@"Menu36"];
+    
+    CGRect frame = button.frame;
+    frame = CGRectMake(0, 0, 36, 36);
+    button.frame = frame;
+    
+    [button setImage:image forState:UIControlStateNormal];
+}
+
+- (BOOL)deepnessForLeftMenu
+{
+    return YES;
+}
 
 - (NSString *)segueIdentifierForIndexPathInLeftMenu:(NSIndexPath *)indexPath
 {
-    
-    
     return @"mapSegue";
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

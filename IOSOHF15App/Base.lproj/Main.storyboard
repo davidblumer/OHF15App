@@ -87,11 +87,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ow9-GK-32H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="180"/>
+            <point key="canvasLocation" x="704" y="172"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="y2E-xD-VUo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYg-oe-FNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gAZ-Gp-fNJ" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ku-U3-CCE"/>
@@ -100,30 +101,15 @@
                     <view key="view" contentMode="scaleToFill" id="TrU-Xe-aLv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFP-GN-jw8">
-                                <rect key="frame" x="251" y="237" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kmY-Fp-pbD">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Nq2-9g-Gog">
-                            <connections>
-                                <segue destination="35F-SR-vIs" kind="custom" identifier="rightMenu" customClass="AMSlideMenuLeftMenuSegue" id="mUP-Ku-X2N"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kmY-Fp-pbD"/>
                     <connections>
                         <segue destination="35F-SR-vIs" kind="custom" identifier="leftMenu" customClass="AMSlideMenuLeftMenuSegue" id="wYe-Ru-yV9"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AYg-oe-FNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-224" y="172"/>
+            <point key="canvasLocation" x="-112" y="172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pnC-Ay-70v">
@@ -139,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bId-xC-3iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-644"/>
+            <point key="canvasLocation" x="1640" y="-628"/>
         </scene>
         <!--Title-->
         <scene sceneID="yzC-yd-OJm">
@@ -176,10 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWM-CK-fQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608" y="-703"/>
+            <point key="canvasLocation" x="2500" y="-628"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="mUP-Ku-X2N"/>
-    </inferredMetricsTieBreakers>
 </document>

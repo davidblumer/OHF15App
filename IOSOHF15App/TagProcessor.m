@@ -12,6 +12,7 @@
 
 + (void)processTags:(NSArray *)tags probabilities:(NSArray *)probabilities callback:(TagProcessorCallback)callback
 {
+    NSLog(@"Processing %i tags and %i probabilities", (int)[tags count], (int)[probabilities count]);
     // TODO:
     
     callback();

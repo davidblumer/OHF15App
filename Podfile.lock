@@ -1,1 +1,75 @@
+PODS:
+  - AMSlideMenu (1.5.4)
+  - ObjCSBAlertViewHelper (1.0.0)
+  - ObjCSBBase64 (1.0.0)
+  - ObjCSBColor (1.0.0)
+  - ObjCSBCrypto (1.0.0)
+  - ObjCSBDeviceHelper (1.0.0)
+  - ObjCSBFoundation (1.0.0)
+  - ObjCSBLanguage (1.0.0)
+  - ObjCSBLocalArray (1.0.0)
+  - ObjCSBLocalPathHelper (1.0.0)
+  - ObjCSBLog (1.0.0)
+  - ObjCSBSynthesizeSingleton (1.0.0)
+  - ObjCSBZip (1.0.0):
+    - objective-zip (~> 0.8)
+  - objective-zip (0.8.3)
+
+DEPENDENCIES:
+  - AMSlideMenu (~> 1.5.4)
+  - ObjCSBAlertViewHelper (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBAlertViewHelper`)
+  - ObjCSBBase64 (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBBase64`)
+  - ObjCSBColor (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBColor`)
+  - ObjCSBCrypto (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBCrypto`)
+  - ObjCSBDeviceHelper (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBDeviceHelper`)
+  - ObjCSBFoundation (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBFoundation`)
+  - ObjCSBLanguage (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLanguage`)
+  - ObjCSBLocalArray (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLocalArray`)
+  - ObjCSBLocalPathHelper (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLocalPathHelper`)
+  - ObjCSBLog (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLog`)
+  - ObjCSBSynthesizeSingleton (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBSynthesizeSingleton`)
+  - ObjCSBZip (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBZip`)
+
+EXTERNAL SOURCES:
+  ObjCSBAlertViewHelper:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBAlertViewHelper
+  ObjCSBBase64:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBBase64
+  ObjCSBColor:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBColor
+  ObjCSBCrypto:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBCrypto
+  ObjCSBDeviceHelper:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBDeviceHelper
+  ObjCSBFoundation:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBFoundation
+  ObjCSBLanguage:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBLanguage
+  ObjCSBLocalArray:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBLocalArray
+  ObjCSBLocalPathHelper:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBLocalPathHelper
+  ObjCSBLog:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBLog
+  ObjCSBSynthesizeSingleton:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBSynthesizeSingleton
+  ObjCSBZip:
+    :path: /Users/thomaskekeisen/Socialbit/Pods/ObjCSBZip
+
+SPEC CHECKSUMS:
+  AMSlideMenu: 8571937703d2b8e187b22c1416be4cafc3532a11
+  ObjCSBAlertViewHelper: 7c7e48cc1c6f249398a6d60e966a27d34ded552f
+  ObjCSBBase64: 4219fba141303c51714aa04f9215ca08c445afc8
+  ObjCSBColor: b1f7b5741f7cc4f79438efa247c877a790685f5d
+  ObjCSBCrypto: 838c6a72639e44ff91e3173e7b3c063b3ec080b8
+  ObjCSBDeviceHelper: c12d3bed6c9013316c96741c4b39e4d910c46276
+  ObjCSBFoundation: 478724ae93506409f0b6d74df02b6fb6c99fd34d
+  ObjCSBLanguage: 0537202cf6411fdc76ab7d75ebfac504975ce2f0
+  ObjCSBLocalArray: 238f2c24ad02be5579cce2278b48449aa53499c1
+  ObjCSBLocalPathHelper: 34312c229af5c767c0bb3256e09cd0ca9a570a5c
+  ObjCSBLog: 542dae81cc96951f84c3e843c3326df89abbc3ea
+  ObjCSBSynthesizeSingleton: fe7fa1287d4662e305820a3ebfa5f1d0f475f1f7
+  ObjCSBZip: 853a98c5425477e9ac74fa5506f442c3227d49e3
+  objective-zip: a27d4b3c060eead4325159e49178e7f0ad5ee808
+
 COCOAPODS: 0.34.1

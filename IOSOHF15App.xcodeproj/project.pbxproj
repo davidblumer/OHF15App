@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202BE0D95561C8CB13247BE4 /* libPods-IOSOHF15App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F979D3DFD39C0136494722E /* libPods-IOSOHF15App.a */; };
 		B24D23621BB6AFEA00B2833F /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23611BB6AFEA00B2833F /* MapViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B24D23681BB6B12700B2833F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24D23671BB6B12700B2833F /* MapKit.framework */; };
+		B24D236A1BB6B16600B2833F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B24D23691BB6B16600B2833F /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
+		B24D236E1BB6BEB200B2833F /* SideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D236D1BB6BEB200B2833F /* SideMenuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B24D23721BB6C0EF00B2833F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23711BB6C0EF00B2833F /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDA1BB6AC3400E42203 /* main.m */; };
 		B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDD1BB6AC3400E42203 /* AppDelegate.m */; };
 		B2DFEFE71BB6AC3400E42203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFEFE51BB6AC3400E42203 /* Main.storyboard */; };
@@ -36,9 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EC427E873601AF1450734AA /* Pods-IOSOHF15App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSOHF15App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSOHF15App/Pods-IOSOHF15App.debug.xcconfig"; sourceTree = "<group>"; };
+		7F979D3DFD39C0136494722E /* libPods-IOSOHF15App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSOHF15App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24D23601BB6AFEA00B2833F /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
 		B24D23611BB6AFEA00B2833F /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
 		B24D23671BB6B12700B2833F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B24D23691BB6B16600B2833F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B24D236B1BB6BB6100B2833F /* SBPodfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = SBPodfile; sourceTree = SOURCE_ROOT; };
+		B24D236C1BB6BEB200B2833F /* SideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuTableViewController.h; sourceTree = "<group>"; };
+		B24D236D1BB6BEB200B2833F /* SideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewController.m; sourceTree = "<group>"; };
+		B24D23701BB6C0EF00B2833F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B24D23711BB6C0EF00B2833F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B2DFEFD61BB6AC3400E42203 /* IOSOHF15App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSOHF15App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DFEFDA1BB6AC3400E42203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2DFEFDC1BB6AC3400E42203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +65,7 @@
 		B2DFEFFD1BB6AC3400E42203 /* IOSOHF15AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSOHF15AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DFF0011BB6AC3400E42203 /* IOSOHF15AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSOHF15AppUITests.m; sourceTree = "<group>"; };
 		B2DFF0031BB6AC3400E42203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C981B1BAD0FEA93F3A726B7B /* Pods-IOSOHF15App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSOHF15App.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSOHF15App/Pods-IOSOHF15App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B24D23681BB6B12700B2833F /* MapKit.framework in Frameworks */,
+				202BE0D95561C8CB13247BE4 /* libPods-IOSOHF15App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F103B16526640EE6619EF4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F979D3DFD39C0136494722E /* libPods-IOSOHF15App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B24D235F1BB6AD8700B2833F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +143,28 @@
 			children = (
 				B24D235F1BB6AD8700B2833F /* AppDelegate */,
 				B24D23631BB6AFF000B2833F /* MapViewViewController */,
+				B24D236F1BB6BED700B2833F /* SideMenuTableViewController */,
+				B24D23731BB6C0F200B2833F /* MainViewController */,
 			);
 			name = Code;
+			sourceTree = "<group>";
+		};
+		B24D236F1BB6BED700B2833F /* SideMenuTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B24D236C1BB6BEB200B2833F /* SideMenuTableViewController.h */,
+				B24D236D1BB6BEB200B2833F /* SideMenuTableViewController.m */,
+			);
+			name = SideMenuTableViewController;
+			sourceTree = "<group>";
+		};
+		B24D23731BB6C0F200B2833F /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B24D23701BB6C0EF00B2833F /* MainViewController.h */,
+				B24D23711BB6C0EF00B2833F /* MainViewController.m */,
+			);
+			name = MainViewController;
 			sourceTree = "<group>";
 		};
 		B2DFEFCD1BB6AC3400E42203 = {
@@ -133,6 +175,8 @@
 				B2DFEFF51BB6AC3400E42203 /* IOSOHF15AppTests */,
 				B2DFF0001BB6AC3400E42203 /* IOSOHF15AppUITests */,
 				B2DFEFD71BB6AC3400E42203 /* Products */,
+				D71254CAC7C3E950AD2A3FD5 /* Pods */,
+				6F103B16526640EE6619EF4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +193,7 @@
 		B2DFEFD81BB6AC3400E42203 /* IOSOHF15App */ = {
 			isa = PBXGroup;
 			children = (
+				B24D236B1BB6BB6100B2833F /* SBPodfile */,
 				B24D23651BB6B00E00B2833F /* Assets */,
 				B24D23661BB6B01200B2833F /* Code */,
 				B24D23641BB6AFF800B2833F /* Storyboards */,
@@ -161,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DFEFED1BB6AC3400E42203 /* Info.plist */,
+				B24D23691BB6B16600B2833F /* Localizable.strings */,
 				B2DFEFDA1BB6AC3400E42203 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -184,6 +230,15 @@
 			path = IOSOHF15AppUITests;
 			sourceTree = "<group>";
 		};
+		D71254CAC7C3E950AD2A3FD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EC427E873601AF1450734AA /* Pods-IOSOHF15App.debug.xcconfig */,
+				C981B1BAD0FEA93F3A726B7B /* Pods-IOSOHF15App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2DFF0061BB6AC3400E42203 /* Build configuration list for PBXNativeTarget "IOSOHF15App" */;
 			buildPhases = (
+				129EA1E5BF7A2007FC7C4106 /* Check Pods Manifest.lock */,
 				B2DFEFD21BB6AC3400E42203 /* Sources */,
 				B2DFEFD31BB6AC3400E42203 /* Frameworks */,
 				B2DFEFD41BB6AC3400E42203 /* Resources */,
+				068DD1019CF4D70BC5A28ABA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DFEFEC1BB6AC3400E42203 /* LaunchScreen.storyboard in Resources */,
+				B24D236A1BB6B16600B2833F /* Localizable.strings in Resources */,
 				B2DFEFE91BB6AC3400E42203 /* Assets.xcassets in Resources */,
 				B2DFEFE71BB6AC3400E42203 /* Main.storyboard in Resources */,
 			);
@@ -310,13 +368,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		068DD1019CF4D70BC5A28ABA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSOHF15App/Pods-IOSOHF15App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		129EA1E5BF7A2007FC7C4106 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2DFEFD21BB6AC3400E42203 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B24D23621BB6AFEA00B2833F /* MapViewViewController.m in Sources */,
+				B24D236E1BB6BEB200B2833F /* SideMenuTableViewController.m in Sources */,
 				B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */,
+				B24D23721BB6C0EF00B2833F /* MainViewController.m in Sources */,
 				B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +547,7 @@
 		};
 		B2DFF0071BB6AC3400E42203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC427E873601AF1450734AA /* Pods-IOSOHF15App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -468,6 +562,7 @@
 		};
 		B2DFF0081BB6AC3400E42203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C981B1BAD0FEA93F3A726B7B /* Pods-IOSOHF15App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

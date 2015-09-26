@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 #import <SBLanguage.h>
 
 @interface MapViewViewController : UIViewController <UIImagePickerControllerDelegate>

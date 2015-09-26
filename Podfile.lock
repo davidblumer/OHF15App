@@ -14,6 +14,7 @@ PODS:
   - ObjCSBZip (1.0.0):
     - objective-zip (~> 0.8)
   - objective-zip (0.8.3)
+  - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - AMSlideMenu (~> 1.5.4)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - ObjCSBLog (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLog`)
   - ObjCSBSynthesizeSingleton (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBSynthesizeSingleton`)
   - ObjCSBZip (from `/Users/thomaskekeisen/Socialbit/Pods/ObjCSBZip`)
+  - SVProgressHUD
 
 EXTERNAL SOURCES:
   ObjCSBAlertViewHelper:
@@ -71,5 +73,6 @@ SPEC CHECKSUMS:
   ObjCSBSynthesizeSingleton: fe7fa1287d4662e305820a3ebfa5f1d0f475f1f7
   ObjCSBZip: 853a98c5425477e9ac74fa5506f442c3227d49e3
   objective-zip: a27d4b3c060eead4325159e49178e7f0ad5ee808
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.34.1

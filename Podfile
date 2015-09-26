@@ -6,6 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target "IOSOHF15App" do
 
 pod "AMSlideMenu", "~> 1.5.4"
+pod 'SVProgressHUD'
 
 pod 'ObjCSBSynthesizeSingleton', :path => '/Users/thomaskekeisen/Socialbit/Pods/ObjCSBSynthesizeSingleton'
 pod 'ObjCSBLanguage', :path => '/Users/thomaskekeisen/Socialbit/Pods/ObjCSBLanguage'

@@ -5,6 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target "IOSOHF15App" do
 
+pod "AFNetworking", "~> 2.0"
 pod "AMSlideMenu", "~> 1.5.4"
 pod 'SVProgressHUD'
 

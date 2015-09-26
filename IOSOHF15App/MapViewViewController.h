@@ -12,9 +12,12 @@
 
 #import <SBLanguage.h>
 
+#import "ImageProcessor.h"
+
 @interface MapViewViewController : UIViewController <UIImagePickerControllerDelegate>
 {
-    
+    @private
+        UIImagePickerController *imagePicker;
 }
 
 - (void)showCamera;

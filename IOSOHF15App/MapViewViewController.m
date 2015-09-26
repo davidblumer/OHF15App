@@ -21,11 +21,24 @@
 
 - (void)showCamera
 {
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    imagePicker = [[UIImagePickerController alloc] init];
+    
+    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    #if TARGET_IPHONE_SIMULATOR
+    {
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    #endif
+    
+    [imagePicker setSourceType:sourceType];
     [imagePicker setAllowsEditing:NO];
-    [imagePicker setCameraDevice:UIImagePickerControllerCameraDeviceRear];
     [imagePicker setDelegate:self];
+    
+    if (sourceType == UIImagePickerControllerSourceTypeCamera)
+    {
+        [imagePicker setCameraDevice:UIImagePickerControllerCameraDeviceRear];
+    }
     
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
@@ -41,7 +54,15 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-   // [SVProgressHUD show];
+    [SVProgressHUD show];
+    
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    [ImageProcessor processImage:image callback:^{
+        NSLog(@"AMK");
+    }];
+    
+    
 }
 
 @end

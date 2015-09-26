@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+#import <SBAlertViewHelper.h>
+#import <SBLanguage.h>
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)setUpAlertViewHelper;
 
 @end
-

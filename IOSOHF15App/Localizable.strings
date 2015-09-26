@@ -5,4 +5,7 @@
   Created by Thomas Kekeisen on 26/09/15.
   Copyright © 2015 Socialbit GmbH. All rights reserved.
 */
-"appTitle" = "Tagifai";
+"anErrorOccurred" = "Es ist ein Fehler aufgetreten";
+"appTitle"        = "Tagifai";
+"clarifaiError"   = "Dieses Bild konnte leider nicht verabeitet werden.";
+"ok"              = "OK";

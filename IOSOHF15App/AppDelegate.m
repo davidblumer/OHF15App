@@ -15,7 +15,9 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self setUpAlertViewHelper];
 
     
     return YES;
@@ -41,6 +43,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setUpAlertViewHelper
+{
+    [SBAlertViewHelper setTexts:SBL(@"ok") errorTitle:SBL(@"anErrorOccurred")];
 }
 
 

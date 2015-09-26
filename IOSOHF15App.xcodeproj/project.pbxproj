@@ -13,6 +13,9 @@
 		B24D236A1BB6B16600B2833F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B24D23691BB6B16600B2833F /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		B24D236E1BB6BEB200B2833F /* SideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D236D1BB6BEB200B2833F /* SideMenuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B24D23721BB6C0EF00B2833F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23711BB6C0EF00B2833F /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B24D23791BB6D91D00B2833F /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23781BB6D91D00B2833F /* ClarifaiClient.m */; settings = {ASSET_TAGS = (); }; };
+		B24D237C1BB6D96E00B2833F /* ImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D237B1BB6D96E00B2833F /* ImageProcessor.m */; settings = {ASSET_TAGS = (); }; };
+		B24D23811BB6DF4100B2833F /* ClarifaiClientFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */; settings = {ASSET_TAGS = (); }; };
 		B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDA1BB6AC3400E42203 /* main.m */; };
 		B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DFEFDD1BB6AC3400E42203 /* AppDelegate.m */; };
 		B2DFEFE71BB6AC3400E42203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFEFE51BB6AC3400E42203 /* Main.storyboard */; };
@@ -51,6 +54,13 @@
 		B24D236D1BB6BEB200B2833F /* SideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewController.m; sourceTree = "<group>"; };
 		B24D23701BB6C0EF00B2833F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B24D23711BB6C0EF00B2833F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B24D23771BB6D91D00B2833F /* ClarifaiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClarifaiClient.h; sourceTree = "<group>"; };
+		B24D23781BB6D91D00B2833F /* ClarifaiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClient.m; sourceTree = "<group>"; };
+		B24D237A1BB6D96E00B2833F /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
+		B24D237B1BB6D96E00B2833F /* ImageProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcessor.m; sourceTree = "<group>"; };
+		B24D237E1BB6D99400B2833F /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		B24D237F1BB6DF4100B2833F /* ClarifaiClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClarifaiClientFactory.h; sourceTree = "<group>"; };
+		B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClientFactory.m; sourceTree = "<group>"; };
 		B2DFEFD61BB6AC3400E42203 /* IOSOHF15App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSOHF15App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DFEFDA1BB6AC3400E42203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2DFEFDC1BB6AC3400E42203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +108,7 @@
 		6F103B16526640EE6619EF4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B24D23671BB6B12700B2833F /* MapKit.framework */,
 				7F979D3DFD39C0136494722E /* libPods-IOSOHF15App.a */,
 			);
 			name = Frameworks;
@@ -141,7 +152,10 @@
 		B24D23661BB6B01200B2833F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				B24D237E1BB6D99400B2833F /* Settings.h */,
 				B24D235F1BB6AD8700B2833F /* AppDelegate */,
+				B24D23821BB6DF4500B2833F /* ClarifaiClientFactory */,
+				B24D237D1BB6D97B00B2833F /* ImageProcessor */,
 				B24D23631BB6AFF000B2833F /* MapViewViewController */,
 				B24D236F1BB6BED700B2833F /* SideMenuTableViewController */,
 				B24D23731BB6C0F200B2833F /* MainViewController */,
@@ -167,10 +181,44 @@
 			name = MainViewController;
 			sourceTree = "<group>";
 		};
+		B24D23751BB6D8AF00B2833F /* External */ = {
+			isa = PBXGroup;
+			children = (
+				B24D23761BB6D8B600B2833F /* Clarifai */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		B24D23761BB6D8B600B2833F /* Clarifai */ = {
+			isa = PBXGroup;
+			children = (
+				B24D23771BB6D91D00B2833F /* ClarifaiClient.h */,
+				B24D23781BB6D91D00B2833F /* ClarifaiClient.m */,
+			);
+			name = Clarifai;
+			sourceTree = "<group>";
+		};
+		B24D237D1BB6D97B00B2833F /* ImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				B24D237A1BB6D96E00B2833F /* ImageProcessor.h */,
+				B24D237B1BB6D96E00B2833F /* ImageProcessor.m */,
+			);
+			name = ImageProcessor;
+			sourceTree = "<group>";
+		};
+		B24D23821BB6DF4500B2833F /* ClarifaiClientFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B24D237F1BB6DF4100B2833F /* ClarifaiClientFactory.h */,
+				B24D23801BB6DF4100B2833F /* ClarifaiClientFactory.m */,
+			);
+			name = ClarifaiClientFactory;
+			sourceTree = "<group>";
+		};
 		B2DFEFCD1BB6AC3400E42203 = {
 			isa = PBXGroup;
 			children = (
-				B24D23671BB6B12700B2833F /* MapKit.framework */,
 				B2DFEFD81BB6AC3400E42203 /* IOSOHF15App */,
 				B2DFEFF51BB6AC3400E42203 /* IOSOHF15AppTests */,
 				B2DFF0001BB6AC3400E42203 /* IOSOHF15AppUITests */,
@@ -196,6 +244,7 @@
 				B24D236B1BB6BB6100B2833F /* SBPodfile */,
 				B24D23651BB6B00E00B2833F /* Assets */,
 				B24D23661BB6B01200B2833F /* Code */,
+				B24D23751BB6D8AF00B2833F /* External */,
 				B24D23641BB6AFF800B2833F /* Storyboards */,
 				B2DFEFD91BB6AC3400E42203 /* Supporting Files */,
 			);
@@ -420,8 +469,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24D237C1BB6D96E00B2833F /* ImageProcessor.m in Sources */,
 				B24D23621BB6AFEA00B2833F /* MapViewViewController.m in Sources */,
+				B24D23791BB6D91D00B2833F /* ClarifaiClient.m in Sources */,
 				B24D236E1BB6BEB200B2833F /* SideMenuTableViewController.m in Sources */,
+				B24D23811BB6DF4100B2833F /* ClarifaiClientFactory.m in Sources */,
 				B2DFEFDE1BB6AC3400E42203 /* AppDelegate.m in Sources */,
 				B24D23721BB6C0EF00B2833F /* MainViewController.m in Sources */,
 				B2DFEFDB1BB6AC3400E42203 /* main.m in Sources */,

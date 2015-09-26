@@ -16,7 +16,16 @@
 
 - (IBAction)addButtonPressed:(id)sender
 {
+    [self showCamera];
+}
+
+- (void)showCamera
+{
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [imagePicker setAllowsEditing:NO];
+    [imagePicker setCameraDevice:UIImagePickerControllerCameraDeviceRear];
+    [imagePicker setDelegate:self];
     
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
@@ -28,6 +37,11 @@
     self.title = SBL(@"appTitle");
 }
 
+#pragma mark - UIImagePickerControllerDelegate
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    
+}
 
 @end

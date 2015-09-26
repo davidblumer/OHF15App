@@ -10,6 +10,11 @@
 
 #import <SBLanguage.h>
 
-@interface MapViewViewController : UIViewController
+@interface MapViewViewController : UIViewController <UIImagePickerControllerDelegate>
+{
+    
+}
+
+- (void)showCamera;
 
 @end

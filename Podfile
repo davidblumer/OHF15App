@@ -7,6 +7,7 @@ target "IOSOHF15App" do
 
 pod "AFNetworking", "~> 2.0"
 pod "AMSlideMenu", "~> 1.5.4"
+pod 'RestKit', '~> 0.24.0'
 pod 'SVProgressHUD'
 
 pod 'ObjCSBSynthesizeSingleton', :path => '/Users/thomaskekeisen/Socialbit/Pods/ObjCSBSynthesizeSingleton'

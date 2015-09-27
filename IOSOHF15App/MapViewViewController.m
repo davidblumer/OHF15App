@@ -43,6 +43,11 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
+- (void)showTypeSelection
+{
+    [self performSegueWithIdentifier:@"typeSelectionSegue" sender:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

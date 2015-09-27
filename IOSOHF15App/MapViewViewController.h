@@ -21,5 +21,6 @@
 }
 
 - (void)showCamera;
+- (void)showTypeSelection;
 
 @end

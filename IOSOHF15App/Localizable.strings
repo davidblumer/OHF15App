@@ -7,7 +7,20 @@
 */
 "anErrorOccurred"      = "Es ist ein Fehler aufgetreten";
 "appTitle"             = "Tagifai";
+"chooseType"           = "Typ wählen";
 "clarifaiError"        = "Dieses Bild konnte leider nicht verabeitet werden.";
 "clarifaiSuccessText"  = "Das Bild wurde erfolgreich in unsere Datenbank aufgenommen, danke!";
 "clarifaiSuccessTitle" = "Bild verarbeitet";
 "ok"                   = "OK";
+"type_nature"          = "Natur";
+"type_shopping"        = "Einkaufen";
+"type_people"          = "Menschen";
+"type_place"           = "Treffpunkt";
+"type_landmark"        = "Sehenswürdigkeit";
+"type_party"           = "Party";
+"type_culture"         = "Kultur";
+"type_work"            = "Arbeit";
+"type_sport"           = "Sport";
+"type_fun"             = "Spaß";
+"type_food"            = "Essen";
+"type_sleep"           = "Übernachten";

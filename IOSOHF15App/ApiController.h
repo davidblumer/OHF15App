@@ -12,7 +12,10 @@
 #import <SBSynthesizeSingleton.h>
 
 #import "LocationController.h"
+#import "MapViewViewController.h"
 #import "Settings.h"
+
+@class MapViewViewController;
 
 @interface ApiController : NSObject
 {
@@ -22,6 +25,7 @@
 + (ApiController *)sharedApiController;
 
 - (NSString *)getUrl:(NSString *)url;
+- (void)getTagsForLocation:(CLLocation *)location mapViewViewController:(MapViewViewController *)mapViewViewController;
 - (void)postTags:(NSArray *)tags fromLocation:(CLLocation *)location;
 
 @end

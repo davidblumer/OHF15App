@@ -11,6 +11,8 @@
 #import <SBAlertViewHelper.h>
 #import <SBLanguage.h>
 
+#import "LocationController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
     

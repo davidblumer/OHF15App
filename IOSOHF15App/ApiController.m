@@ -17,6 +17,44 @@ SB_SYNTHESIZE_SINGLETON_GCD(ApiController)
     return [NSString stringWithFormat:@"%@%@", ApiUrl, url];
 }
 
+- (void)getTagsForLocation:(CLLocation *)location mapViewViewController:(MapViewViewController *)mapViewViewController
+{
+    CLLocation *lastLocation = [[LocationController sharedLocationController] lastLocation];
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^
+                   {
+    
+  
+    NSString *url = [self getUrl:[NSString stringWithFormat:@"api/pois?lat=%@&lng=%@&distance=50000", [NSString stringWithFormat:@"%.7f", lastLocation.coordinate.latitude], [NSString stringWithFormat:@"%.7f", lastLocation.coordinate.longitude]]];
+    
+                       NSLog(@"URL: %@", url);
+                       
+            NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+  [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    
+  // NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
+    NSError *error = nil;
+    NSHTTPURLResponse *responseCode = nil;
+     NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    
+    NSError *jsonError;
+    id jsonDictionaryOrArray = [NSJSONSerialization JSONObjectWithData:oResponseData options:NSJSONWritingPrettyPrinted error:&jsonError];
+                       
+                       NSLog(@"response: %@", jsonDictionaryOrArray);
+    if(jsonError) {
+        // check the error description
+        NSLog(@"json error : %@", [jsonError localizedDescription]);
+    } else {
+        [mapViewViewController setPoints:[jsonDictionaryOrArray objectForKey:@"pois"]];
+    }
+    
+                           });
+    
+}
+
 - (void)postTags:(NSArray *)tags fromLocation:(CLLocation *)location
 {
     CLLocation *lastLocation = [[LocationController sharedLocationController] lastLocation];
@@ -61,7 +99,7 @@ SB_SYNTHESIZE_SINGLETON_GCD(ApiController)
         request.HTTPBody = requestBodyData;
         
         // Create url connection and fire request
-        NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self]; 
+        NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     });
     
 

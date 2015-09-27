@@ -19,6 +19,7 @@
 {
     [self setUpAlertViewHelper];
 
+    [[LocationController sharedLocationController] start];
     
     return YES;
 }

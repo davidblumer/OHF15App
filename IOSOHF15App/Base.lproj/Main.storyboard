@@ -172,6 +172,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapView" destination="Fkc-ce-m11" id="3hK-7Z-tUN"/>
                         <segue destination="W85-Yl-qRZ" kind="presentation" identifier="typeSelectionSegue" id="yiI-ac-57E"/>
                     </connections>
                 </viewController>

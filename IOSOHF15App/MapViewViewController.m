@@ -93,6 +93,8 @@
 
     self.title = SBL(@"appTitle");
     
+    _mapView.delegate = self;
+    
     [self update];
     
     [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(update) userInfo:nil repeats:YES];
@@ -109,20 +111,23 @@
     
 }
 
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+- (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    // this part is boilerplate code used to create or reuse a pin annotation
-    static NSString *viewId = @"MKPinAnnotationView";
-    MKPinAnnotationView *annotationView = (MKPinAnnotationView*)
-    [self.mapView dequeueReusableAnnotationViewWithIdentifier:viewId];
-    if (annotationView == nil) {
-        annotationView = [[MKPinAnnotationView alloc]
-                           initWithAnnotation:annotation reuseIdentifier:viewId];
-    }
-    // set your custom image
-    //annotationView.image = [UIImage imageNamed:@"emoji-ghost.png"];
+    static NSString *annotationViewReuseIdentifier = @"annotationViewReuseIdentifier";
     
+    MKAnnotationView *annotationView = (MKAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewReuseIdentifier];
+    
+    if (annotationView == nil)
+    {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationViewReuseIdentifier];
+    }
+    
+    NSString *imageName = [NSString stringWithFormat:@"Marker%@", [annotation.title capitalizedString]];
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    
+    annotationView.image = image;
+    annotationView.annotation = annotation;
     
     return annotationView;
 }

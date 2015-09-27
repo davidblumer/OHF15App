@@ -13,7 +13,10 @@
 + (void)processTags:(NSArray *)tags probabilities:(NSArray *)probabilities callback:(TagProcessorCallback)callback
 {
     NSLog(@"Processing %i tags and %i probabilities", (int)[tags count], (int)[probabilities count]);
-    // TODO:
+    
+    CLLocation *lastLocation = [LocationController sharedLocationController];
+    
+    [[ApiController sharedApiController] postTags:tags fromLocation:lastLocation];
     
     callback();
 }

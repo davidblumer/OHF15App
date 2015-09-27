@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ApiController.h"
+#import "LocationController.h"
+
 typedef void (^TagProcessorCallback)();
 
 @interface TagProcessor : NSObject

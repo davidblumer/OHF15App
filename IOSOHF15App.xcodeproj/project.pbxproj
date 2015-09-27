@@ -90,6 +90,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>B26C20BF1BB798B20075BF4F</string>
 				<string>B24D23671BB6B12700B2833F</string>
 				<string>7F979D3DFD39C0136494722E</string>
 			</array>
@@ -211,8 +212,10 @@ fi
 			<key>children</key>
 			<array>
 				<string>B24D237E1BB6D99400B2833F</string>
+				<string>B26C20BB1BB797AA0075BF4F</string>
 				<string>B24D235F1BB6AD8700B2833F</string>
 				<string>B24D23821BB6DF4500B2833F</string>
+				<string>B26C20C41BB799310075BF4F</string>
 				<string>B26C20B31BB72FFA0075BF4F</string>
 				<string>B24D237D1BB6D97B00B2833F</string>
 				<string>B24D23631BB6AFF000B2833F</string>
@@ -718,6 +721,130 @@ buildNumber=$(($buildNumber + 1))
 				<array/>
 			</dict>
 		</dict>
+		<key>B26C20BB1BB797AA0075BF4F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B26C20BC1BB797BE0075BF4F</string>
+				<string>B26C20BD1BB797BE0075BF4F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ApiController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B26C20BC1BB797BE0075BF4F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ApiController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B26C20BD1BB797BE0075BF4F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ApiController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B26C20BE1BB797BE0075BF4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B26C20BD1BB797BE0075BF4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>B26C20BF1BB798B20075BF4F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>B26C20C01BB798B20075BF4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B26C20BF1BB798B20075BF4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B26C20C11BB7992D0075BF4F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LocationController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B26C20C21BB7992D0075BF4F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LocationController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B26C20C31BB7992D0075BF4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B26C20C21BB7992D0075BF4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ASSET_TAGS</key>
+				<array/>
+			</dict>
+		</dict>
+		<key>B26C20C41BB799310075BF4F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B26C20C11BB7992D0075BF4F</string>
+				<string>B26C20C21BB7992D0075BF4F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>LocationController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B2DFEFCD1BB6AC3400E42203</key>
 		<dict>
 			<key>children</key>
@@ -826,6 +953,8 @@ buildNumber=$(($buildNumber + 1))
 				<string>B24D23811BB6DF4100B2833F</string>
 				<string>B2DFEFDE1BB6AC3400E42203</string>
 				<string>B24D23721BB6C0EF00B2833F</string>
+				<string>B26C20BE1BB797BE0075BF4F</string>
+				<string>B26C20C31BB7992D0075BF4F</string>
 				<string>B24D23851BB6E44400B2833F</string>
 				<string>B2DFEFDB1BB6AC3400E42203</string>
 				<string>B26C20B61BB7300F0075BF4F</string>
@@ -841,6 +970,7 @@ buildNumber=$(($buildNumber + 1))
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>B26C20C01BB798B20075BF4F</string>
 				<string>B24D23681BB6B12700B2833F</string>
 				<string>202BE0D95561C8CB13247BE4</string>
 			</array>

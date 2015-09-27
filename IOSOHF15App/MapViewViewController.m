@@ -113,6 +113,11 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    if (annotation == _mapView.userLocation)
+    {
+        return nil;
+    }
+    
     static NSString *annotationViewReuseIdentifier = @"annotationViewReuseIdentifier";
     
     MKAnnotationView *annotationView = (MKAnnotationView *)[_mapView dequeueReusableAnnotationViewWithIdentifier:annotationViewReuseIdentifier];

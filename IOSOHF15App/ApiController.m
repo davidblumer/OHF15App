@@ -95,6 +95,9 @@ SB_SYNTHESIZE_SINGLETON_GCD(ApiController)
         
         
         NSString *stringData = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:jsonData options:1 error:nil] encoding:NSUTF8StringEncoding];
+        
+        NSLog(@"data to post YO: %@", stringData);
+        
         NSData *requestBodyData = [stringData dataUsingEncoding:NSUTF8StringEncoding];
         request.HTTPBody = requestBodyData;
         
